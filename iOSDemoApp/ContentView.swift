@@ -9,8 +9,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var name: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack {
+            Spacer()
+            Text("Login")
+                .bold()
+            
+            Text("Please enter your login and password")
+                .bold()
+            
+            TextField("Enter your name", text: $name)
+                .background(Color("flash-white"))
+                .cornerRadius(4.0)
+                .padding()
+                .keyboardType(.emailAddress)
+            
+            SecureField("Enter password", text: $password)
+                .background(Color("flash-white"))
+                .cornerRadius(4.0)
+                .padding()
+            
+            Spacer()
+            Button(action: {
+        
+            }) {
+                HStack() {
+                    Spacer()
+                    Text("Login").fontWeight(.semibold).font(.title)
+                    Spacer()
+                }
+                .padding()
+                .foregroundColor(Color.white)
+                .background(Color.blue)
+                .cornerRadius(30)
+            } .padding()
+        
+        }
     }
 }
 

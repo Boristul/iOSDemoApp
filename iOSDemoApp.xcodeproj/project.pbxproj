@@ -37,6 +37,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA2798C324165B070094B846 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		DA8151B02407024300D8B6A1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +63,7 @@
 		DA8151BB2407024300D8B6A1 /* iOSDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA2798C324165B070094B846 /* Login */,
 				DA8151BC2407024300D8B6A1 /* AppDelegate.swift */,
 				DA8151BE2407024300D8B6A1 /* SceneDelegate.swift */,
 				DA8151C02407024300D8B6A1 /* ContentView.swift */,
@@ -288,6 +296,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOSDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOSDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
