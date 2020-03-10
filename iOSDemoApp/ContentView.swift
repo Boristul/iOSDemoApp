@@ -13,7 +13,11 @@ struct ContentView: View {
     @State private var name: String = ""
     @State private var password: String = ""
     
+    @State private var showBalance = false
+    
     var body: some View {
+        
+        NavigationView {
         
         VStack {
             Spacer()
@@ -22,6 +26,10 @@ struct ContentView: View {
             
             Text("Please enter your login and password")
                 .bold()
+            
+                NavigationLink(destination: BalanceView()) {
+                    Text("Play")
+                }
             
             TextField("Enter your name", text: $name)
                 .background(Color("flash-white"))
@@ -36,7 +44,7 @@ struct ContentView: View {
             
             Spacer()
             Button(action: {
-        
+                self.showBalance = true
             }) {
                 HStack() {
                     Spacer()
@@ -48,8 +56,11 @@ struct ContentView: View {
                 .background(Color.blue)
                 .cornerRadius(30)
             } .padding()
-        
-        }
+              .sheet(isPresented: self.$showBalance) {
+                BalanceView()
+            }
+            }
+    }
     }
 }
 

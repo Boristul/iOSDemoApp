@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA2798C724183A270094B846 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2798C624183A270094B846 /* BalanceView.swift */; };
 		DA8151BD2407024300D8B6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8151BC2407024300D8B6A1 /* AppDelegate.swift */; };
 		DA8151BF2407024300D8B6A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8151BE2407024300D8B6A1 /* SceneDelegate.swift */; };
 		DA8151C12407024300D8B6A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8151C02407024300D8B6A1 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA2798C624183A270094B846 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		DA8151B92407024300D8B6A1 /* iOSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8151BC2407024300D8B6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8151BE2407024300D8B6A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +39,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA2798C324165B070094B846 /* Login */ = {
+		DA2798C5241839D80094B846 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
+				DA2798C624183A270094B846 /* BalanceView.swift */,
 			);
-			path = Login;
+			path = Balance;
 			sourceTree = "<group>";
 		};
 		DA8151B02407024300D8B6A1 = {
@@ -63,7 +66,7 @@
 		DA8151BB2407024300D8B6A1 /* iOSDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				DA2798C324165B070094B846 /* Login */,
+				DA2798C5241839D80094B846 /* Balance */,
 				DA8151BC2407024300D8B6A1 /* AppDelegate.swift */,
 				DA8151BE2407024300D8B6A1 /* SceneDelegate.swift */,
 				DA8151C02407024300D8B6A1 /* ContentView.swift */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8151BD2407024300D8B6A1 /* AppDelegate.swift in Sources */,
+				DA2798C724183A270094B846 /* BalanceView.swift in Sources */,
 				DA8151BF2407024300D8B6A1 /* SceneDelegate.swift in Sources */,
 				DA8151C12407024300D8B6A1 /* ContentView.swift in Sources */,
 			);
@@ -294,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 36YCM3K6GL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOSDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -314,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 36YCM3K6GL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOSDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
