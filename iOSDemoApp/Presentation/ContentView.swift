@@ -21,13 +21,14 @@ struct ContentView: View {
         
         VStack {
             Spacer()
+            
             Text("Login")
                 .bold()
             
             Text("Please enter your login and password")
                 .bold()
             
-                NavigationLink(destination: BalanceView()) {
+            NavigationLink(destination: BalanceView()) {
                     Text("Play")
                 }
             
@@ -43,9 +44,8 @@ struct ContentView: View {
                 .padding()
             
             Spacer()
-            Button(action: {
-                self.showBalance = true
-            }) {
+            
+            Button(action: {}) {
                 HStack() {
                     Spacer()
                     Text("Login").fontWeight(.semibold).font(.title)
@@ -56,11 +56,8 @@ struct ContentView: View {
                 .background(Color.blue)
                 .cornerRadius(30)
             } .padding()
-              .sheet(isPresented: self.$showBalance) {
-                BalanceView()
-            }
-            }
-    }
+            }.navigationBarTitle("Login")
+        }
     }
 }
 
